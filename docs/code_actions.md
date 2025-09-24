@@ -142,6 +142,18 @@ let
 in {}
 ```
 
+### `remove_unused_rec`
+
+Remove an unused `rec`.
+
+```nix
+rec { a = 1; }
+```
+=>
+```nix
+{ a = 1; }
+```
+
 ### `rewrite_string_to_indented` and `rewrite_indented_to_string`
 
 Rewrite between double quoted strings and indented strings
